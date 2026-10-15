@@ -12,6 +12,8 @@ cask "ntwatch" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "ntwatch.app"
   binary "#{appdir}/ntwatch.app/Contents/MacOS/ntwatch"
 
